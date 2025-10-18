@@ -1,0 +1,24 @@
+# Compiled files
+bin/
+*.o
+*.a
+*.so
+*.dll
+
+# Build system
+*.exe
+*.out
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.temp
