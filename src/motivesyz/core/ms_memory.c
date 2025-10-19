@@ -337,12 +337,16 @@ ms_memory_result_t ms_allocator_deallocate(ms_allocator_t* allocator, void* ptr)
     return MS_MEMORY_SUCCESS;
 }
 
-static ms_allocator_t g_default_allocator = {0};
-
 ms_allocator_t* ms_allocator_default(void) {
+    static ms_allocator_t g_default_allocator = {0};
     static int initialized = 0;
+
     if (!initialized) {
         g_default_allocator.instance_tag = generate_guard_value();
+#if MEMORY_STATS_ENABLED
+        g_default_allocator.total_allocated = 0;
+        g_default_allocator.allocation_count = 0;
+#endif
         initialized = 1;
     }
     return &g_default_allocator;
