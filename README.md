@@ -9,6 +9,18 @@ A clean C library providing simplified, expressive syntax for system programming
 
 MotiveSyz reimagines C standard library APIs with modern safety guarantees, better error handling, and intuitive interfaces while maintaining zero-cost abstractions and full compatibility.
 
+## Status: First Major Project - Seeking Guidance
+
+This is my first serious C library, and I'm actively learning through building. 
+The core JSON functionality is stable and tested, but I'd appreciate:
+
+- **Constructive feedback** on architecture decisions
+- **Code review** of complex parts (allocators, parsing)
+- **Suggestions** for real-world use cases
+- **Help** identifying blind spots in safety/performance
+---
+
+
 ## Why MotiveSyz?
 
 | Task | Standard C | MotiveSyz |
@@ -45,8 +57,8 @@ if (ms_json_get_object_value(root, "name", &name) == MS_JSON_SUCCESS) {
 
 // Create JSON programmatically
 ms_json_value_t* person = ms_json_create_object(NULL);
-ms_json_object_set(person, "name", ms_json_create_string(NULL, "Alice"));
-ms_json_object_set(person, "age", ms_json_create_number(NULL, 30));
+ms_json_object_set(person, "name", ms_json_create_string(NULL, "John doe"));
+ms_json_object_set(person, "age", ms_json_create_number(NULL, 69));
 
 // Serialize to string
 char* json_output = NULL;
