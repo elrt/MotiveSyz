@@ -4,7 +4,6 @@
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)
 ![Version](https://img.shields.io/badge/Version-0.2.0-green.svg)
-![Status](https://img.shields.io/badge/Status-Production--ready-brightgreen.svg)
 
 A clean C library providing simplified, expressive syntax for system programming and everyday tasks. Licensed under GPL-2.0.
 
@@ -231,8 +230,3 @@ MotiveSyz is designed for zero-overhead in release mode:
 
 This project is licensed under the GNU General Public License v2.0 - see the LICENSE file for details.
 
-### Considerations:
-- Not suitable for proprietary/closed-source software
-- License inheritance affects combined works
-- Source disclosure required when distributing binaries
-```
